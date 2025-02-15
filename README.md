@@ -22,7 +22,7 @@
 
 2. Execute the provided loadstring below.
 ```luau
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AtTheZenith/LunarVape/main/loader.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/renderintent/render/main/loader.lua", true))()
 ```
 
 ## Possible Issues
