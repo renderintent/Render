@@ -32,7 +32,7 @@ local function downloadFile(path, func)
   if not isfile(path) then
     local suc, res = pcall(function()
       return game:HttpGet(
-      'https://raw.githubusercontent.com/AtTheZenith/LunarVape/' ..
+      'https://raw.githubusercontent.com/renderintent/render/' ..
       readfile('newvape/profiles/commit.txt') .. '/' .. select(1, path:gsub('newvape/', '')), true)
     end)
     if not suc or res == '404: Not Found' then
@@ -67,7 +67,7 @@ local function finishLoading()
 				if _G.VapeDeveloper then
 					loadstring(readfile('newvape/loader.lua'), 'loader')()
 				else
-					loadstring(game:HttpGet('https://raw.githubusercontent.com/AtTheZenith/LunarVape/'..readfile('newvape/profiles/commit.txt')..'/loader.lua', true), 'loader')()
+					loadstring(game:HttpGet('https://raw.githubusercontent.com/renderintent/render/'..readfile('newvape/profiles/commit.txt')..'/loader.lua', true), 'loader')()
 				end
 			]]
       if _G.VapeDeveloper then
@@ -84,7 +84,7 @@ local function finishLoading()
   if not _G.vapereload then
     if not vape.Categories then return end
     if vape.Categories.Main.Options['GUI bind indicator'].Enabled then
-      vape:CreateNotification('Lunar Vape', 'Lunar Vape has finished loading.', 6)
+      vape:CreateNotification('Render Vape', ' Render has finished loading enjoy!', 6)
     end
   end
 end
@@ -108,7 +108,7 @@ if not _G.VapeIndependent then
     if not _G.VapeDeveloper then
       local suc, res = pcall(function()
         return game:HttpGet(
-        'https://raw.githubusercontent.com/AtTheZenith/LunarVape/' ..
+        'https://raw.githubusercontent.com/renderintent/render/' ..
         readfile('newvape/profiles/commit.txt') .. '/games/' .. game.PlaceId .. '.lua', true)
       end)
       if suc and res ~= '404: Not Found' then
