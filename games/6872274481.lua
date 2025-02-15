@@ -761,7 +761,7 @@ run(function()
 	for i, v in remoteNames do
 		local remote = dumpRemote(debug.getconstants(v))
 		if remote == '' then
-			notif('Lunar Vape', 'Failed to grab remote ('..i..')', 10, 'alert')
+			notif('Render Vape', 'Failed to grab remote ('..i..')', 10, 'alert')
 		end
 		remotes[i] = remote
 	end
